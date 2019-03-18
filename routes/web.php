@@ -14,6 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::post('/api/item', 'ItemsControler@store');
 
 Route::resource('/api/item', 'ItemsController');
 
